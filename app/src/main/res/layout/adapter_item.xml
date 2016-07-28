@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#E0F7FA"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        card_view:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+            <RelativeLayout
+                android:id="@+id/flight_basic_info_layout"
+                android:layout_alignTop="@+id/flight_details_info"
+                android:layout_alignBottom="@+id/flight_details_info"
+                android:minWidth="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/flight_icon"
+                    android:src="@drawable/airplane"
+                    android:layout_centerHorizontal="true"
+                    android:layout_above="@+id/flight_type"
+                    android:layout_marginBottom="3dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/flight_type"
+                    android:layout_centerInParent="true"
+                    android:text="Go Ibibo"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/flight_details_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/flight_basic_info_layout">
+                <TextView
+                    android:id="@+id/flight_path"
+                    android:text="BOM TO DEL"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/class_type"
+                    android:layout_below="@+id/flight_path"
+                    android:text="class: Business"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/date_time_layout"
+                    android:layout_below="@+id/class_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/take_off_date_time_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/take_off_date"
+                            android:text="27 Jan 2016"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/take_off_time"
+                            android:layout_below="@+id/take_off_date"
+                            android:layout_alignLeft="@+id/take_off_date"
+                            android:layout_alignRight="@+id/take_off_date"
+                            android:text="10:00 pm"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:src="@drawable/right_arrow"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:layout_width="15dp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/landing_date_time_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/landing_date"
+                            android:text="27 Jan 2016"
+                            android:textSize="15sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/landing_time"
+                            android:layout_below="@+id/landing_date"
+                            android:layout_alignLeft="@+id/landing_date"
+                            android:layout_alignRight="@+id/landing_date"
+                            android:text="10:00 pm"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/price_layout"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@+id/date_time_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/price_text"
+                        android:text="Price"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/price_value"
+                        android:layout_below="@+id/price_text"
+                        android:text="Rs: 4000"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
