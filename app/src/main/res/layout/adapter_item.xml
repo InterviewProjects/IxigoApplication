@@ -83,7 +83,7 @@
                         <TextView
                             android:id="@+id/take_off_date"
                             android:text="27 Jan 2016"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -93,7 +93,7 @@
                             android:layout_alignLeft="@+id/take_off_date"
                             android:layout_alignRight="@+id/take_off_date"
                             android:text="10:00 pm"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
@@ -105,7 +105,7 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
                         android:gravity="center"
-                        android:layout_width="15dp"
+                        android:layout_width="13dp"
                         android:layout_height="match_parent" />
 
                     <RelativeLayout
@@ -115,7 +115,7 @@
                         <TextView
                             android:id="@+id/landing_date"
                             android:text="27 Jan 2016"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
 
@@ -125,7 +125,7 @@
                             android:layout_alignLeft="@+id/landing_date"
                             android:layout_alignRight="@+id/landing_date"
                             android:text="10:00 pm"
-                            android:textSize="15sp"
+                            android:textSize="13sp"
                             android:gravity="center"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content" />
@@ -142,7 +142,7 @@
                     <TextView
                         android:id="@+id/price_text"
                         android:text="Price"
-                        android:textSize="15sp"
+                        android:textSize="13sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
@@ -150,7 +150,7 @@
                         android:id="@+id/price_value"
                         android:layout_below="@+id/price_text"
                         android:text="Rs: 4000"
-                        android:textSize="15sp"
+                        android:textSize="13sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
 
